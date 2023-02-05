@@ -85,7 +85,7 @@ export default function Resume() {
          </ol>
         <p className="text-center">Download my resume:</p>
         <div className='d-flex justify-content-center'>
-          <a href="%PUBLIC_URL%/files/Resume 2023(Peter Lim).docx" className="btn btn-primary btn-block">Download</a>
+          <a href="/files/Resume 2023(Peter Lim).docx" className="btn btn-primary btn-block">Download</a>
         </div>
       </div>
     </section>
