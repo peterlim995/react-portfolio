@@ -28,7 +28,7 @@ export default function Portfolio() {
       title: 'Note Taker',
       description: 'Express.js Challenge',
       deployed: 'https://note-taker-peterlim995.herokuapp.com/',
-      github: 'github.com/peterlim995/Note_Taker'
+      github: 'https://github.com/peterlim995/Note_Taker'
     },
     {
       src: '/react-portfolio/images/employee-tracker.jpg',
@@ -57,40 +57,40 @@ export default function Portfolio() {
 
   ]
 
-  const [isBlurred, setIsBlurred] = useState(false);
-  const [blurValue, setBlurValue] = useState(0);
-  const imageWidth = 400;
-  const imageHeight = 300;
+  // const [isBlurred, setIsBlurred] = useState(false);
+  // const [blurValue, setBlurValue] = useState(0);
+  // const imageWidth = 400;
+  // const imageHeight = 300;
   
-  React.useEffect(() => {
-    let blurInterval;
-    if (isBlurred) {
-      blurInterval = setInterval(() => {
-        setBlurValue(blurValue => {
-          if (blurValue >= 5) {
-            clearInterval(blurInterval);
-            return 5;
-          } else {
-            return blurValue + 0.5;
-          }
-        });
-      }, 50);
-    } else {
-      blurInterval = setInterval(() => {
-        setBlurValue(blurValue => {
-          if (blurValue <= 0) {
-            clearInterval(blurInterval);
-            return 0;
-          } else {
-            return blurValue - 0.5;
-          }
-        });
-      }, 50);
-    }
-    return () => {
-      clearInterval(blurInterval);
-    };
-  }, [isBlurred]);
+  // React.useEffect(() => {
+  //   let blurInterval;
+  //   if (isBlurred) {
+  //     blurInterval = setInterval(() => {
+  //       setBlurValue(blurValue => {
+  //         if (blurValue >= 5) {
+  //           clearInterval(blurInterval);
+  //           return 5;
+  //         } else {
+  //           return blurValue + 0.5;
+  //         }
+  //       });
+  //     }, 50);
+  //   } else {
+  //     blurInterval = setInterval(() => {
+  //       setBlurValue(blurValue => {
+  //         if (blurValue <= 0) {
+  //           clearInterval(blurInterval);
+  //           return 0;
+  //         } else {
+  //           return blurValue - 0.5;
+  //         }
+  //       });
+  //     }, 50);
+  //   }
+  //   return () => {
+  //     clearInterval(blurInterval);
+  //   };
+  // }, [isBlurred]);
 
 
   return (
