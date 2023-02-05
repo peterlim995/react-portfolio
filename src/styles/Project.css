@@ -1,8 +1,30 @@
-.section {
-  background: #f3e5f5;
-  padding: 20px;
+.image-container {
+  position: relative;
 }
 
-.section h2 {
-  text-align: center;
+.image-container .app, .image-container .github {
+  display: none;
+  position: absolute;
+  bottom: 50%;
+  /* width: 49%;
+  padding: 10px; */
+  text-align: center;  
+  background: #023047;  ;
+}
+
+.image-container .app {
+  left: 30%;
+}
+
+.image-container .github {
+  right: 30%;
+}
+
+.image-container:hover .app, .image-container:hover .github {
+  display: block; 
+  
+}
+
+.card-img-top:hover {
+  opacity: 0.5;
 }

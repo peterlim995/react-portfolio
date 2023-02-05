@@ -1,0 +1,30 @@
+
+.link {
+  padding: 20px;
+  margin: 0 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-family: "UNicod Sans";
+  color: var(--text);
+}
+
+.link:hover {
+  color: var(--black);
+}
+
+.link.active {
+  /* background-color: #265a88; */
+  font-weight: 800;
+}
+
+.nav-item {
+  margin: 100px, 0;
+}
+/*   
+  #navbarNav {
+    display: flex;
+    justify-content: center;
+  } */

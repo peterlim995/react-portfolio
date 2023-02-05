@@ -1,0 +1,11 @@
+#my-photo {
+    /* height: 50%; */
+    width: 50%;
+}
+
+
+@media (max-width: 992px) {
+    #my-photo {
+      width: 100%;
+    }
+  }

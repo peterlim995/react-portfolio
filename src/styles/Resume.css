@@ -1,0 +1,57 @@
+#resume {
+  background-color: #f2f2f2;
+}
+
+#resume ul {
+  list-style: none;
+  padding: 0;
+}
+
+#resume li {
+  margin-bottom: 30px;
+}
+
+#resume strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#resume a.btn {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+#resume a.btn:hover {
+  background-color: #fff;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* ul {
+  list-style-type: disc;
+  padding-left: 20px;
+} */
+
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+  }

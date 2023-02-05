@@ -1,11 +1,11 @@
 import React from 'react';
-// import '../styles/Header.css';
+import '../styles/Header.css';
 
 
-const Header = () => (
-  <header className="bg-primary text-white text-center py-5">
-    <h1 className="display-4">My Portfolio</h1>
-  </header>
+const Header = () => (  
+  <div className="header">
+    <a href="./index.html" className="a">PETER LIM - WEB DEVELOPER PORTIFOLIO</a>
+  </div>  
 );
 
 

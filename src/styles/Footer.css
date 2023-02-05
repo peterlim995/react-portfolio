@@ -1,8 +1,23 @@
-.section {
-  background: #f3e5f5;
-  padding: 20px;
+/*  Contact */
+
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  font-size: 25px;
+  color: var(--text);
 }
 
-.section h2 {
-  text-align: center;
+.contact li {
+  margin: 0 30px;
 }
+
+.FaLinkedin{
+  font-size: 40px;
+}
+
+
+/* footer {
+  height: 50px;
+  background-color: var(--black);
+} */

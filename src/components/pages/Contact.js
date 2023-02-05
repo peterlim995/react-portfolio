@@ -59,10 +59,12 @@ export default function Contact() {
     setName('');    
     setEmail('');
     setMessage('');
+    setErrorMessage('');
   };
 
   return (
-    <section id="contact" className="py-5">
+    <section id="contact" className="py-3">
+      
       <div className="container">
         <h2 className="text-center">Contact</h2>
         <p className="text-center">Feel free to reach out to me:</p>
@@ -106,7 +108,7 @@ export default function Contact() {
         <div>
           <p className="error-text">{errorMessage}</p>
         </div>
-      )}
+      )}      
       </div>
     </section>
   );

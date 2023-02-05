@@ -1,12 +1,25 @@
+
+
 .header {
-  background: #b71775;
-  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Sofia Pro";
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  width: 100%;
+  line-height: 1.2em;
+  text-align: center;
+  height: 200px;   
 }
 
-.header h1 {
-  margin: 0;
-  padding-top: 75px;
-  text-align: center;
-  color: white;
-  font-size: 3rem;
+.a{
+  text-decoration: none;  
+  color: var(--text);
+}
+
+.a:hover{
+  color: var(--black);
 }
