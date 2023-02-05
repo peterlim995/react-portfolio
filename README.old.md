@@ -12,4 +12,7 @@ Portfolio using React
 https://peterlim995.github.io/react-portfolio/
 
 
-## Usage
+
+## Screen Shot
+
+![](./public/files/react_portifolio.png)

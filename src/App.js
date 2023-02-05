@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const App = () => (
   <>
   <div className="top"></div>    
-    <div className='main'>
+    <div className='main '>
     <Header />
     <Navigation />        
     <Footer />

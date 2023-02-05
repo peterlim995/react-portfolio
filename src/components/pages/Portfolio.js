@@ -52,7 +52,7 @@ export default function Portfolio() {
       title: 'Group Project 1: Healthy Gigs',
       description: 'Interactive Front-End Application',
       deployed: 'https://sam-lerner.github.io/healthy-gigs/',
-      github: 'github.com/sam-lerner/healthy-gigs'
+      github: 'https://github.com/sam-lerner/healthy-gigs'
     }
 
   ]
