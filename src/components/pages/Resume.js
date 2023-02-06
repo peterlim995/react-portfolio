@@ -85,7 +85,7 @@ export default function Resume() {
          </ol>
         <p className="text-center">Download my resume:</p>
         <div className='d-flex justify-content-center'>
-          <a href="https://peterlim995.github.io/react-portfolio/files/Resume%202023(Peter%20Lim).docx" className="btn btn-primary ">Download</a>
+          <a href="/react-portfolio/files/Resume%202023(Peter%20Lim).docx" className="btn btn-primary ">Download</a>
         </div>
       </div>
     </section>
