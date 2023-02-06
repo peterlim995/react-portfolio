@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.image-container .app, .image-container .github {
+.image-container .app, .image-container .github {  
   display: none;
   position: absolute;
   bottom: 50%;
@@ -28,3 +28,4 @@
 .card-img-top:hover {
   opacity: 0.5;
 }
+
