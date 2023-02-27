@@ -19,8 +19,7 @@ const App = () => (
     <Router>
       <div className="top"></div>
       <div className='main '>
-        <Header />
-        
+        <Header />        
         <Routes>
           {/* <Navigation /> */}
           <Route path="/" element={<AboutMe />} />
