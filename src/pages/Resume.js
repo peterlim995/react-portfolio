@@ -1,8 +1,11 @@
 import React from 'react';
-import '../../styles/Resume.css';
+import '../styles/Resume.css';
+import NavTabs from '../components/NavTabs';
 
 export default function Resume() {
   return (
+    <>
+    <NavTabs currentPage='Resume' />
     <section id="resume" className="py-5">
       <div className="container ">
         <ol>
@@ -89,5 +92,6 @@ export default function Resume() {
         </div>
       </div>
     </section>
+    </>
   );
 }

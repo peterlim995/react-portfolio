@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import '../../styles/Contact.css';
+import '../styles/Contact.css';
+import NavTabs from '../components/NavTabs';
 
 // Here we import a helper function that will check if the email is valid
-import { validateEmail } from '../../utils/helpers';
+import { validateEmail } from '../utils/helpers';
 
 
 export default function Contact() {
@@ -63,7 +64,10 @@ export default function Contact() {
     setErrorMessage('');
   };
 
+
   return (
+    <>
+    <NavTabs currentPage='Contact' />
     <section id="contact" className="py-3">
 
       <div className="container">
@@ -129,5 +133,6 @@ export default function Contact() {
         </div>
       </div>
     </section>
+    </>
   );
 }

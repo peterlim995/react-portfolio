@@ -1,9 +1,26 @@
 import React, {useState} from 'react';
-import Project from '../Project';
+import Project from '../components/Project'
+import NavTabs from '../components/NavTabs';
 
 export default function Portfolio() {
 
   const images = [
+    {
+      src: '/react-portfolio/images/k-meal-planner.jpg',
+      alt: 'Group Project 3',
+      title: 'Group Project 3: Recipefinder',
+      description: 'MERN Stack Single-Page Application',
+      deployed: 'https://k-meal-planner.herokuapp.com/',
+      github: 'https://github.com/michelletrn/k-meal-planner'
+    },
+    {
+      src: '/react-portfolio/images/book-search-engine.jpg',
+      alt: 'Book Search Engine',
+      title: 'Book Search Engine',
+      description: 'MERN Challenge',
+      deployed: 'https://book-search-engine-peterlim995.herokuapp.com/',
+      github: 'https://github.com/peterlim995/Book-Search-Engine'
+    },
     {
       src: '/react-portfolio/images/Social-Network-API.jpg',
       alt: 'Social Network API',
@@ -154,6 +171,8 @@ export default function Portfolio() {
 
   return (
 
+    <>
+    <NavTabs currentPage='Portfolio' />
     <section id="portfolio" className="py-5">
       <div className="container">
         <h2 className="text-center">Portfolio</h2>
@@ -163,5 +182,6 @@ export default function Portfolio() {
         </div>
       </div>
     </section>
+    </>
   );
 }

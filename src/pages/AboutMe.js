@@ -1,9 +1,12 @@
 import React from 'react';
-import '../../styles/AboutMe.css';
-
+import '../styles/AboutMe.css';
+import '../components/NavTabs';
+import NavTabs from '../components/NavTabs';
 
 export default function AboutMe() {
   return (
+    <>
+    <NavTabs currentPage='About Me' />
     
     <section id="about-me" className="py-5 ">
 
@@ -47,5 +50,6 @@ export default function AboutMe() {
       </div>
 
     </section>
+    </>
   );
 }
