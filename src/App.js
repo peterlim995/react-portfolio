@@ -16,7 +16,7 @@ import NavTabs from './components/NavTabs';
 
 const App = () => (
   <>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="top"></div>
       <div className='main '>
         <Header />        
