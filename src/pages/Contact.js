@@ -1,12 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useRef} from 'react';
 import '../styles/Contact.css';
 import NavTabs from '../components/NavTabs';
+import emailjs from '@emailjs/browser';
 
 // Here we import a helper function that will check if the email is valid
 import { validateEmail } from '../utils/helpers';
 
 
 export default function Contact() {
+
+  const form = useRef();
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -57,6 +60,16 @@ export default function Contact() {
       return;
     }
 
+
+    emailjs.sendForm('service_75odhwb', 'template_xz101g1', form.current, 'gSLqY0XUBRCAgVvYu')
+    .then((result) => {
+        // If we are successful, show an alert to the user stating that we have sent the email
+        alert('Email sent successfully!');        
+    }, (error) => {
+      // If we are not successful, show an alert to the user stating that we failed to send the email
+      alert('Email failed to send. Please try again.');        
+    });
+
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setName('');
     setEmail('');
@@ -76,7 +89,7 @@ export default function Contact() {
             <h2 className="text-center">Contact</h2>
             <p className="text-center">Feel free to reach out to me:</p>
             <p className="text-center"><a href="mailto:peterlim995@gmail.com" target="_blank">peterlim995@gmail.com</a></p>
-            <form>
+            <form ref={form}>
               <div className="form-group">
                 <label htmlFor="name">Name</label>
                 <input
