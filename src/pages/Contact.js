@@ -75,6 +75,7 @@ export default function Contact() {
           <div class="col-12 col-sm-8 col-lg-6">
             <h2 className="text-center">Contact</h2>
             <p className="text-center">Feel free to reach out to me:</p>
+            <p className="text-center"><a href="mailto:peterlim995@gmail.com" target="_blank">peterlim995@gmail.com</a></p>
             <form>
               <div className="form-group">
                 <label htmlFor="name">Name</label>
