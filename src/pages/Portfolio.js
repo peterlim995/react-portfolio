@@ -1,18 +1,43 @@
 import React, {useState} from 'react';
 import Project from '../components/Project'
+import Study from '../components/Study'
 import NavTabs from '../components/NavTabs';
 
 export default function Portfolio() {
 
-  const images = [
+  const projects = [
     {
       src: '/react-portfolio/images/k-meal-planner.jpg',
       alt: 'Group Project 3',
-      title: 'Group Project 3: Recipefinder',
-      description: 'MERN Stack Single-Page Application',
+      title: 'Group Project 3: Recipefinder',      
       deployed: 'https://k-meal-planner.herokuapp.com/',
-      github: 'https://github.com/michelletrn/k-meal-planner'
+      github: 'https://github.com/michelletrn/k-meal-planner',
+      description: 'Recipe Finder is a full-stack MERN (MongoDB, Express, React, Node.js) web application that allows users to search and save recipes. The app also allows users to add recipe ingredients to a shopping cart and either order groceries or email a shopping list.',
+      skills: 'MongoDB, Express, React, Node.js, JavaScript, HTML, CSS, JWT, GraphQL, Stripe, Bootstrap, React Bootstap, Icons, Heroku, Git, GitHub, Third-Party APIs, dotenv, env-cmd'
     },
+    {
+      src: '/react-portfolio/images/community-chat.jpg',
+      alt: 'Group Project 2',
+      title: 'Group Project 2: Community Chat',
+      description: 'Community Chat is a RESTful API social media app with MVC paradigm structure where users can post text, images, and videos as well as live chat with other users online.',
+      deployed: 'https://community-chat.herokuapp.com/',
+      github: 'https://github.com/BillStephens2022/Community-Chat',
+      skills: 'MySQL, Sequelize, Express, Handlebars, Cloudinary, Socket.io, Passport.js, JavaScript, HTML, CSS, Bootstrap, bcrypt, dotenv, Heroku, Git, GitHub'
+    },
+    {
+      src: '/react-portfolio/images/healthy-gigs.jpg',
+      alt: 'Group Project 1',
+      title: 'Group Project 1: Healthy Gigs',
+      description: 'Healthy Gigs Website is interactive Front-End Application by using Server Side APIs that allows the user to search for events based on type, location or date. When the event results display, the user is also presented with information on COVID levels in the area where the events are.',
+      deployed: 'https://sam-lerner.github.io/healthy-gigs/',
+      github: 'https://github.com/sam-lerner/healthy-gigs',
+      skills: 'HTML, CSS, JavaScript, jQuery, Bootstrap, Materialize, Server Side APIs (Seatgeek, CDC, mapbox, zip api), Git, GitHub'
+    },
+   
+
+  ];
+
+  const studies = [
     {
       src: '/react-portfolio/images/book-search-engine.jpg',
       alt: 'Book Search Engine',
@@ -29,14 +54,7 @@ export default function Portfolio() {
       deployed: 'https://user-images.githubusercontent.com/115592345/215306973-72b365c4-2d7f-4f89-9caf-a9f8963806ea.mp4',
       github: 'https://github.com/peterlim995/Social_Network_API'
     },
-    {
-      src: '/react-portfolio/images/community-chat.jpg',
-      alt: 'Group Project 2',
-      title: 'Group Project 2: Community Chat',
-      description: 'Interactive Full-Stack Application',
-      deployed: 'https://community-chat.herokuapp.com/',
-      github: 'https://github.com/BillStephens2022/Community-Chat'
-    },
+    
     {
       src: '/react-portfolio/images/tech-blog.jpg',
       alt: 'Tech Blog',
@@ -85,14 +103,7 @@ export default function Portfolio() {
       deployed: 'https://user-images.githubusercontent.com/115592345/207998333-3681d070-f8bf-4fef-bee0-3042701747ed.mp4',
       github: 'https://github.com/peterlim995/README-Generator'
     },
-    {
-      src: '/react-portfolio/images/healthy-gigs.jpg',
-      alt: 'Group Project 1',
-      title: 'Group Project 1: Healthy Gigs',
-      description: 'Interactive Front-End Application',
-      deployed: 'https://sam-lerner.github.io/healthy-gigs/',
-      github: 'https://github.com/sam-lerner/healthy-gigs'
-    },
+    
     {
       src: '/react-portfolio/images/Weather_Dashboard.jpg',
       alt: 'Weather Dashboard',
@@ -125,13 +136,7 @@ export default function Portfolio() {
       deployed: 'https://peterlim995.github.io/GeneratePassword/',
       github: 'https://github.com/peterlim995/GeneratePassword'
     },
-    
-    
-    
-    
-    
-
-  ]
+  ];
 
   // const [isBlurred, setIsBlurred] = useState(false);
   // const [blurValue, setBlurValue] = useState(0);
@@ -176,9 +181,13 @@ export default function Portfolio() {
     <section id="portfolio" className="py-5">
       <div className="container">
         <h2 className="text-center">Portfolio</h2>
-        <p className="text-center">My Recent Work</p>
+        <p className="text-center">My Projects</p>
         <div className="row">                    
-            <Project images={images}/>          
+            <Project projects={projects}/>          
+        </div>
+        <p className="text-center">My Bootcamp Studies</p>
+        <div className="row">                    
+            <Study studies={studies}/>          
         </div>
       </div>
     </section>
