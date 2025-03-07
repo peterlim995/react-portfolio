@@ -5,7 +5,70 @@ import NavTabs from '../components/NavTabs';
 
 export default function Portfolio() {
 
-  const projects = [
+  const lcLabProjects = [
+    {
+      src: '/react-portfolio/images/pinterview.png',      
+      alt: 'Pinterview',
+      title: 'Pinterview',      
+      deployed: 'https://app.pinterview.us/',
+      github: 'https://github.com/lclabinfo/pinterview',
+      description: 'The project is an app/web application designed for interview simulation. Users can practice interviews in various modes, receive example answers to questions, and get feedback on their responses through AI analysis.',
+      skills: (
+        <ul>
+          <li>• Frontend Development: HTML, CSS, JavaScript</li>
+          <li>• Backend Development: PHP (Laravel Framework), Python</li>
+          <li>• Database Management: MySQL</li>
+          <li>• Version Control: Git</li>
+          <li>• UI/UX Design: Responsive design techniques</li>          
+          <li>• AI Integration: Speech-to-text and text analysis for feedback</li>
+        </ul>
+      ),
+      mainRole: 'Full Stack Developer',
+    },  
+    {
+      src: '/react-portfolio/images/resup.png',      
+      alt: 'Resume Builder',
+      title: 'Resume Builder',      
+      deployed: 'https://new.pabit.app/',
+      github: 'https://github.com/lclabinfo/resume',
+      description: 'The project is an app/web application designed for resume builder. Users can build their resume, cover letter, and interview with the help of AI.',
+      skills: (
+        <ul>
+          <li>• Frontend Development: HTML, CSS, JavaScript</li>
+          <li>• Backend Development: PHP (Laravel Framework), Python</li>
+          <li>• Database Management: MySQL</li>
+          <li>• Version Control: Git</li>
+          <li>• UI/UX Design: Responsive design techniques</li>          
+          <li>• AI Integration: detailed suggestions, feedback, job fit analysis, interview preparation, and more</li>
+        </ul>
+      ),
+      mainRole: 'Full Stack Developer',
+    },  
+    {
+      src: '/react-portfolio/images/pabit.png',      
+      alt: 'Pabit',
+      title: 'Pabit',      
+      deployed: 'https://app.pabit.co/',
+      github: 'https://github.com/lclabinfo/newpabit',
+      description: 'The project is an app/web application designed for english pattern learning. Users can learn english patterns with video and quiz.',
+      skills: (
+        <ul>
+          <li>• Frontend Development: HTML, CSS, JavaScript</li>
+          <li>• Backend Development: PHP (Laravel Framework), Python</li>
+          <li>• Database Management: MySQL</li>
+          <li>• Version Control: Git</li>
+          <li>• UI/UX Design: Responsive design techniques</li>          
+          <li>• AI Integration: Expressions practice</li>
+        </ul>
+      ),
+      mainRole: 'Full Stack Developer',
+    },  
+   
+
+  ];
+
+
+  const projects = [   
     {
       src: '/react-portfolio/images/k-meal-planner.jpg',
       alt: 'Group Project 3',
@@ -180,8 +243,12 @@ export default function Portfolio() {
     <NavTabs currentPage='Portfolio' />
     <section id="portfolio" className="py-5">
       <div className="container">
-        <h2 className="text-center">Portfolio</h2>
-        <p className="text-center">My Projects</p>
+        {/* <h2 className="text-center">Portfolio</h2> */}
+        <p className="text-center">LC Lab Projects</p>
+        <div className="row">                    
+            <Project projects={lcLabProjects}/>          
+        </div>
+        <p className="text-center">My Bootcamp Group Projects</p>
         <div className="row">                    
             <Project projects={projects}/>          
         </div>
