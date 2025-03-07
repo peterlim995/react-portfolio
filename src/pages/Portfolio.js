@@ -29,7 +29,7 @@ export default function Portfolio() {
       src: '/react-portfolio/images/resup.png',      
       alt: 'Resume Builder',
       title: 'Resume Builder',      
-      deployed: 'https://new.pabit.app/',
+      deployed: 'https://app.resup.co/',
       github: 'https://github.com/lclabinfo/resume',
       description: 'The project is an app/web application designed for resume builder. Users can build their resume, cover letter, and interview with the help of AI.',
       skills: (
@@ -48,7 +48,7 @@ export default function Portfolio() {
       src: '/react-portfolio/images/pabit.png',      
       alt: 'Pabit',
       title: 'Pabit',      
-      deployed: 'https://app.pabit.co/',
+      deployed: 'https://new.pabit.app/',
       github: 'https://github.com/lclabinfo/newpabit',
       description: 'The project is an app/web application designed for english pattern learning. Users can learn english patterns with video and quiz.',
       skills: (
